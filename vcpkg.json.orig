@@ -1,0 +1,27 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "quick-nap",
+  "version-semver": "1.0.0",
+  "dependencies": [
+    "commonlibsf",
+    "simpleini"
+  ],
+  "license": "GPL-3.0-or-later",
+  "vcpkg-configuration": {
+    "default-registry": {
+      "kind": "git",
+      "repository": "https://github.com/microsoft/vcpkg",
+      "baseline": "424ed5e6737117a53b947c5a8c09bc2860cd5469"
+    },
+    "registries": [
+      {
+        "kind": "git",
+        "repository": "https://github.com/Starfield-Reverse-Engineering/Starfield-RE-vcpkg",
+        "baseline": "561ee39b90b04cec52c10e7b9c606c0c94194436",
+        "packages": [
+          "commonlibsf"
+        ]
+      }
+    ]
+  }
+}
